@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить автомобиль дилеру</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add.css') }}">
+</head>
+<body>
+    <h1>Добавить автомобиль дилеру с ID {{ diler_id }}</h1>
+    <form method="POST">
+        <label for="car_id">Выберите автомобиль:</label>
+        <select name="car_id" id="car_id" required>
+            <option value="">-- Выберите автомобиль --</option>
+            {% for car in available_cars %}
+            <option value="{{ car[0] }}">{{ car[1] }} {{ car[2] }} (ID: {{ car[0] }})</option>
+            {% endfor %}
+        </select>
+        <div class="button-container">
+            <button type="submit">Добавить</button>
+            <a href="/dilers/{{ diler_id }}/cars">
+                <button type="button">Назад к автомобилям дилера</button>
+            </a>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h1>Автосалон</h1>
+    <a href="/dilers">
+        <button>Посмотреть список дилеров</button>
+    </a>
+    <a href="/cars">
+        <button>Посмотреть список автомобилей</button>
+    </a>
+    <a href="/add_options">
+            <button>Добавить данные</button>
+        </a>
+    <a href="/edit_options">
+            <button>Изменить данные</button>
+        </a>
+</body>
+
+</html>

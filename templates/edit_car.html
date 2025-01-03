@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактировать автомобиль</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add.css') }}">
+</head>
+<body>
+    <h1>Редактировать автомобиль</h1>
+    <form method="POST">
+        <label for="firm">Марка:</label>
+        <input type="text" name="firm" value="{{ car[1] }}" required><br>
+        <label for="model">Модель:</label>
+        <input type="text" name="model" value="{{ car[2] }}" required><br>
+        <label for="year">Год:</label>
+        <input type="number" name="year" value="{{ car[3] }}" required><br>
+        <label for="power">Мощность:</label>
+        <input type="number" name="power" value="{{ car[4] }}" required><br>
+        <label for="color">Цвет:</label>
+        <input type="text" name="color" value="{{ car[5] }}" required><br>
+        <label for="price">Цена:</label>
+        <input type="number" name="price" value="{{ car[6] }}" required><br>
+        <label for="diler_id">ID Дилера:</label>
+        <input type="number" name="diler_id" value="{{ car[9] }}" required><br>
+        <button type="submit">Сохранить изменения</button>
+    </form>
+        <a href="/cars">
+            <button type="button">К автомобилям</button>
+        </a>
+        <a href="/">
+            <button type="button">На главную</button>
+        </a>
+</body>
+
+</html>
