@@ -14,3 +14,9 @@
 
 Добавление нового дилера
 ![diler_add](https://github.com/user-attachments/assets/25e3d931-5661-4baf-a89d-efe8cc347d33)
+
+# RabbitMQ
+Логирование данных при создании, редактировании и удалении автомобилей
+![CREATE](https://github.com/user-attachments/assets/61098d4f-2d17-4182-beec-0bd77b501df9)
+![UPDATE](https://github.com/user-attachments/assets/5e2b4ab2-0bf6-45f9-bccb-16c33967afba)
+![DELETE](https://github.com/user-attachments/assets/82a99513-2385-44a8-84ab-5371ec31af29)
